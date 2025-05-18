@@ -2,35 +2,75 @@ body{
     background:  white;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
 }
+
+/* HEADER */
 header{
     background: black;
-    padding: 20px;
+    padding: 20px 40px 5px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-section{
-    background: white;
+
+header nav ul{
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+header nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+header h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+
+
+/* FAVORITE GAMES */
+.FavoriteGames{
+    background-color: rgb(206, 206, 206);
     color: black;
-    padding: 5px;
-    margin: 0 0 5px 0;
+    padding: 20px 5px;
     display: flex;
+    grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
+    flex-wrap: wrap;
 }
+
+.FavoriteGames figure{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.FavoriteGames figure img{
+    width: 400px;
+    box-shadow: rgb(0, 0, 0, 0.8) 0 0 10px;
+    border: 4px rgb(41, 41, 41) solid;
+    border-radius: 20px;
+}
+
+/* FOOTER */
 footer{
     background: black;
-    padding: 5px;
-}
-div{
-    background: red;
-    padding: 5px;
-    margin: auto;
-    width: 100px;
-}
-ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-li{
-    display: inline-block;
-    margin-right: 20px;
+    height: 250px;
+    padding: 10px 30px;
+    text-align: center;
+    align-content: flex-end;
 }
